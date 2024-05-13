@@ -22,3 +22,26 @@ for i in range(numero, -1, -1):
     if i >0:
         resultado += ","
 print(resultado)
+# crear un programa que me imprima las cinco vocales 
+def imprimir_vocales():
+    vocales = ['a', 'e', 'i', 'o', 'u']
+    for vocal in vocales:
+        print(vocal)
+
+imprimir_vocales()
+
+# crear un programa que me muestre los ocho primeros numeros pares
+
+for numero in range(0, 16, 2):
+    print(numero)
+# forma 2
+def numeros_pares():
+    contador = 0
+    numero = 0
+    while contador < 8:
+        if numero % 2 == 0:
+            print(numero)
+            contador += 1
+        numero += 1
+
+numeros_pares()
