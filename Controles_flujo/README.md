@@ -64,3 +64,10 @@ for n in "aeiou":
 for i,l in enumerate("aeiou"):
     print(f"el indice es {i} y la letra es {l}")
 ```
+ *`enumerate`* consume mas memoria y la ejecucion es mas lenta.
+
+ *`print`* para oraciones medianas consume menos y mas rapido.
+
+ para oraciones cortas se usa *`contador =contador+1`*.
+
+*`_`* es para que no consuma mucha ram
