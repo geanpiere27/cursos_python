@@ -113,3 +113,24 @@ for indice, caracter in enumerate(texto):
 
 print("La cantidad de comas en el texto es:", contador_comas)
 print("Los índices de las comas son:", indices_comas)
+
+# Ejemplos de "WHILE"
+condicion=True
+while condicion:
+    print("hola")
+    condicion=False
+# Ejemplo 2:
+condicion=True
+while condicion:
+    eval=input("desea continuar[S/N]:")
+    if eval=="S":
+        print("continuas en el bucle")
+    else:
+        print("se termino el programa")
+        break
+#Ejemplo 3:
+contador=0
+while contador<=5:
+    print(contador)
+    contador+=1
+print(f"el valor final:{contador}")

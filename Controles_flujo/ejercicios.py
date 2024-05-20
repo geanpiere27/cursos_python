@@ -1,3 +1,35 @@
+# crear un programa que pida la cantidad de notas que se debe registrar luego pedira las notas e imprimira el promedio
+# Ejemplo de internet
+
+cantidad_notas = int(input("Ingrese la cantidad de notas a registrar: "))
+suma_notas = 0
+contador = 0
+
+while contador < cantidad_notas:
+    suma_notas += float(input(f"Ingrese la nota {contador + 1}: "))
+    contador += 1
+
+promedio = suma_notas / cantidad_notas
+print(f"El promedio de las {cantidad_notas} notas es: {promedio}")
+
+# crear un programa que me muestre la tabla de multiplicar del 1 al 5
+
+for numero in range(1, 6):
+    print(f"Tabla del {numero}")
+    for i in range(1, 13):
+        print(f"{numero} x {i} = {numero * i}")
+    print()
+
+# crear un programa que pida un numero y que muestre y que muestre la tabla de multiplicar de ese numero
+numero = input("Introduce un número para mostrar su tabla de multiplicar: ")
+if numero.isdigit():
+    numero = int(numero)
+    print(f"Tabla de multiplicar del {numero}:")
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+else:
+    print("Por favor, introduce un número válido.")
+
 #Escribir un programa que pregunte a un usuario su edad y muestre por pantalla si es mayor o no.
 edad=int(input("ingrese su edad:"))
 if edad >=18:
@@ -117,3 +149,4 @@ def imprimir_figura():
         print(letras[i] * (i+1) * (i+1))
 
 imprimir_figura()
+

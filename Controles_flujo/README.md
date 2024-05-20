@@ -54,7 +54,7 @@ for n in range(0,len(oracion)):
         #contador+=1
 print(f"la cantidad de letras a que es {contador}")
 ```
-**"[]"acede al indice del codigo**
+1. **"[]"acede al indice del codigo**
 
 `ejemplo_3:`
 ```python
@@ -64,10 +64,41 @@ for n in "aeiou":
 for i,l in enumerate("aeiou"):
     print(f"el indice es {i} y la letra es {l}")
 ```
- *`enumerate`* consume mas memoria y la ejecucion es mas lenta.
+1. *`enumerate`* consume mas memoria y la ejecucion es mas lenta.
 
- *`print`* para oraciones medianas consume menos y mas rapido.
+2. *`print`* para oraciones medianas consume menos y mas rapido.
 
- para oraciones cortas se usa *`contador =contador+1`*.
+3. para oraciones cortas se usa *`contador =contador+1`*.
 
-*`_`* es para que no consuma mucha ram
+4. *`_`* es para que no consuma mucha ram
+
+# while 
+
+es un mecanismo que usa `python` para repetir instrucciones, la semantica de esta sentencia es: `mientras se cumpla la condicion has algo`
+```python
+while ():
+    print("hola")
+    # es un bucle infinito
+```
+#### Ejemplo dos:
+```python
+condicion=True
+while condicion:
+    eval=input("desea continuar[s/n]:")
+    if eval=="s":
+        print("continuas en el bucle")
+    else:
+        print("se termino el programa")
+        break
+```
+1. `.upper` convierte el texto en mayuscula
+   ```python
+   # Ejemplo de metodos de string- array
+   nombre="jose"
+   print(nombre.upper()) # convierte el texto en mayusculas
+   apellido="ALVAREZ"
+   print(apellido.lower()) # convierte el texto en minuscula
+   segundo_nombre="luis"
+   print(segundo_nombre.capitalize()) #convierte la primera letra en mayuscula
+   ```
+   
