@@ -1,6 +1,4 @@
-### CONTROLES DE FLUJO
-
-
+# CONTROLES DE FLUJO
 Los controles de flujo son estructuras utilizadas en programación para controlar el flujo de ejecución de un programa. Permiten tomar decisiones basadas en condiciones específicas y repetir acciones varias veces según ciertas condiciones. Los controles de flujo permiten que un programa ejecute diferentes bloques de código dependiendo de ciertas condiciones y también permiten que un bloque de código se repita varias veces.
 
 Los controles de flujo más comunes en la mayoría de los lenguajes de programación incluyen:

@@ -2,7 +2,6 @@
 ### Problema 1: Determinar si un número es positivo, negativo o cero
 #Escribe un programa que solicite al usuario un número e imprima si es positivo, negativo o cero.
 
-
 # Solicitar al usuario un número
 numero = float(input("Ingrese un número: "))
 
