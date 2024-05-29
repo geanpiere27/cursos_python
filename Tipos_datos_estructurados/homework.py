@@ -40,6 +40,11 @@ lista_alumnos=[
 #lista_alumnos.pop(0)
 #print(lista_alumnos)
 # tercer problema
-indice=lista_alumnos.index(3)
-print(lista_alumnos[indice])
-pertenencia=3 in lista_alumnos
+lista_alumnos.index(3)["nombre","apellido","edad"]
+print(lista_alumnos)
+# 2. Crear una lista con tres DICCIONARIO donde tendran los datos de su mascotas nombre, edad, sexo, raza
+## dic=[{}]
+#tareas
+# mostrar la lista con los cuatro diccionario
+# editar el 3 registro y cambiar la edad sin modificar la lista original
+# mostrar la lista original y luego la lista con el 3 registro modificado

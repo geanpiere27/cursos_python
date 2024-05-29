@@ -93,3 +93,76 @@ print(lista_nombre[indice])
 # 
 pertenencia="edith"in lista_nombre #True False
 ```
+### 5. comaparacion de listas
+podemos hacer uso de los operadores de comparacion para comparar listas
+**ejem:**
+```python
+compara=[1,2,3]<[1,2,4]
+#1 no por que son iguales en ambas listas
+#2 no por que son iguales en ambas listas
+#3 evalua que es menor que 4 
+#entonces la primera lista es menor que la segunda lista 
+print(compara)
+#salida
+```
+### 6. cuidado con las coplas 
+
+### 7. FE de erratas (Actualizar listas)
+#### ejemplo 1 modifica el valor de la lista 
+```python
+lista=[1,3,4,5,6]
+copia_lista=lista[0]=2
+print(copia_lista)
+# [2,3,4,5,6]
+# modificando lista con diccionario
+alumnos=[
+    {
+        "nombre":"abel",
+        "edad":11 
+    },{
+        "nombre":"anthony"
+        "edad":29
+    }]
+alumnos[0]["edad"]=30
+print(alumnos)
+```
+#### ejemplo 2 modificacion e lista de un valor
+```python
+lista=[1,3,4,5,6]
+copia_lista=lista[0]=2
+print(copia_lista)
+# [2,3,4,5,6]
+# modificando lista con diccionario
+alumnos=[
+    {
+        "nombre":"abel",
+        "edad":11 
+    },{
+        "nombre":"anthony"
+        "edad":29
+    }]
+alumnos[0]["edad"]=30
+alumnos[0]={"nombre":"mafer","edad":15}
+print(alumnos)
+```
+#### ejemplo 3 aumentar un valor 
+```python
+lista=[1,3,4,5,6]
+copia_lista=lista[0]=2
+print(copia_lista)
+# [2,3,4,5,6]
+# modificando lista con diccionario
+alumnos=[
+    {
+        "nombre":"abel",
+        "edad":11 
+    },{
+        "nombre":"anthony"
+        "edad":29
+    }]
+alumnos[0]["edad"]=30
+alumnos[0]={"nombre":"mafer","edad":15}
+# solucion
+alumnos[1]["sexo"]="por definir"
+print(alumnos)
+```

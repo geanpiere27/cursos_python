@@ -1,5 +1,5 @@
 #lista=["abel","anthony","miguel"]
-#print(lista[1:])
+#print(lista[1:])ciba una lista 
 #diccionario={"nombre":"antonio","edad":15,"sexo":False}
 #print(diccionario["nombre"])
 # ejemplo de split
@@ -24,7 +24,18 @@
 # .join 
 # el metodo qiue utilizamos para unir
 # elementos de una lista en un texto 
-texto_largo="este es un texto largo chiquitas y chiquitos"
-nuevo_texto=texto_largo.split(" ")
-print(" ".join(nuevo_texto))
+#texto_largo="este es un texto largo chiquitas y chiquitos"
+#nuevo_texto=texto_largo.split(" ")
+#print(" ".join(nuevo_texto))
+## datos estructurados
+#lista_original=[1,2,3,4]
+#copia_lista=lista_original
+#lista_original[-1]=15
+#print(copia_lista)
 
+## craer un programa que recibe 
+lista=[4,76,1,3,6,8,2]
+copia_lista=lista.copy()
+copia_lista.sort()
+print(lista)
+print(copia_lista)
