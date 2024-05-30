@@ -48,3 +48,30 @@ print(lista_alumnos)
 # mostrar la lista con los cuatro diccionario
 # editar el 3 registro y cambiar la edad sin modificar la lista original
 # mostrar la lista original y luego la lista con el 3 registro modificado
+
+dato_mascota=[
+     {"nombre":"pipo",
+     "edad":5,
+     "sexo":"macho",
+     "raza":"pitbull"
+     },{"nombre":"blanca",
+     "edad":6,
+     "sexo":"hembra",
+     "raza":"poodle"
+     },{"nombre":"bianca",
+     "edad":4,
+     "sexo":"hembra",
+     "raza":"chiwawa"
+     },{"nombre":"alma",
+     "edad":7,
+     "sexo":"hembra",
+     "raza":"shi tzu"
+     }
+     ]
+for diccionario in dato_mascota:
+    print(diccionario)
+print()
+copia_mascotas=dato_mascota.copy()
+copia_mascotas[2]["edad"]=7
+for copy in copia_mascotas:
+    print(copy)
