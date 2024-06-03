@@ -11,23 +11,24 @@ tupla=("abel",20,5.2,False,[])
 diccionario={"nombre":"antonio","edad":15,"sexo":False}
             # clave : # valor
 ```
--[!TIP]
--** observacion:** que los tipos de datos estructurados pueden almacenar, en su interior otros tipos de datos estructurados
+[!TIP]
+
+** observacion:** que los tipos de datos estructurados pueden almacenar, en su interior otros tipos de datos estructurados
 ```python
 lista_alumnos=[
     {
         "nombre":"abel",
-        "edad":20
+        "edad":20,
         "amigos":["no tiene"]
     },{
         "nombre":"ruth",
-        "edad":13
+        "edad":13,
         "amigos":["flor,"rocio"]
     },{
         "nombre":"jose ma",
         "edad":80
     },{
-        "nombre":"rony"
+        "nombre":"rony",
         "edad":15
     }
 ]
@@ -166,3 +167,26 @@ alumnos[0]={"nombre":"mafer","edad":15}
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
 ```
+# Metodos de python
+## numeros
+```python
+len(154789)
+# devuelve la cantiadad de digitos
+# 6
+```
+## texto
+```python
+len("hola mundo")
+# devuelve la cantidad de caracteres
+# el espacio cuenta tambien como un caracter
+# 10
+```
+## listas
+```python
+len("a","e,"i","o","u")
+# devuelve la cantidad de elementos 
+# el cuenta tambien como un caracter
+# 4
+```
+## tuplas
+## diccionario

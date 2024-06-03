@@ -40,8 +40,8 @@ lista_alumnos=[
 #lista_alumnos.pop(0)
 #print(lista_alumnos)
 # tercer problema
-lista_alumnos.index(3)["nombre","apellido","edad"]
-print(lista_alumnos)
+#lista_alumnos.index(3)["nombre","apellido","edad"]
+#print(lista_alumnos)
 # 2. Crear una lista con tres DICCIONARIO donde tendran los datos de su mascotas nombre, edad, sexo, raza
 ## dic=[{}]
 #tareas
@@ -67,7 +67,7 @@ dato_mascota=[
      "sexo":"hembra",
      "raza":"shi tzu"
      }
-     ]
+     ] 
 for diccionario in dato_mascota:
     print(diccionario)
 print()
@@ -75,3 +75,39 @@ copia_mascotas=dato_mascota.copy()
 copia_mascotas[2]["edad"]=7
 for copy in copia_mascotas:
     print(copy)
+
+# un empresario de alquiler de autos desea guardar en una base de datos de la informacion de sus vehiculos, proceso que desea automizar con un sistema 
+# informatico, las acciones que pueden realizar el empresario son ver las listas de autos que tienen, podra tambien actulizar la lista y agregar un 
+# nuevo vehiculo.
+#######
+# casos de uso
+# 1. Ver la lista de autos: El empresario puede consultar la lista completa de autos disponibles en la base de datos.
+# 2. Actualizar la lista de autos: El empresario puede modificar la información de un vehículo existente.
+# 3. Agregar un nuevo vehículo: El empresario puede añadir nuevos vehículos a la base de datos.
+# programacion
+lista_autos=[
+    {
+        "nombre":"supra mk4",
+        "marca":"toyota",
+        "año":1985
+    },{
+        "nombre":"GT-R",
+        "marca":"nissan",
+        "año":1969
+    },{
+        "nombre":"Golf",
+        "marca":"volkswagen",
+        "año":1985
+    },{
+        "nombre":"Q5",
+        "marca":"audi",
+        "año":1994
+    },{
+        "nombre":"elantra",
+        "marca":"hyundai",
+        "año":1990
+    }]
+lista_autos[3]={"nombre":"G-class","marca":"mercedes-benz","año":1979}
+lista_autos.insert(5,{"nombre":"A6","marca":"audi","año":1998})
+
+print(lista_autos)
