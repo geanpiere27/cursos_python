@@ -9,7 +9,7 @@ print()
 ## ejemplo de lista
 texto="hola"
 lista_texto=list(texto)
-lista_2=list[ e for in texto]
+lista_2=list[e for in texto]
 print(lista_2)
 
 texto_largo="hola como estan bienvenidos al salon"
