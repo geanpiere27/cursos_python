@@ -111,3 +111,6 @@ lista_autos[3]={"nombre":"G-class","marca":"mercedes-benz","año":1979}
 lista_autos.insert(5,{"nombre":"A6","marca":"audi","año":1998})
 
 print(lista_autos)
+
+# crear una lista de los primeros 20 numeros primos haciendo uso de comprension
+lista_numeros=[]
