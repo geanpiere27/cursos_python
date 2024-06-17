@@ -57,3 +57,16 @@ def persona(nom,edad):
         edad=edad
     )
 print(persona(nombre.edad))
+def suma(*args):
+    nueva_lista=list(args)
+    nueva_lista[0]=10
+    print(nueva_lista)
+suma(4,7,8,5,2,4)
+# empaquetado y desempaquetado de argumento nominales
+# [kwargs] palabra clave
+# (**) empaquetado de argumentos nominales
+def alumnos(**kwargs):
+    # para modificar
+    kwargs["nombre"]="abel"
+    print(kwargs)
+alumnos(nombre="miguel",apellido="largo",edad=30)

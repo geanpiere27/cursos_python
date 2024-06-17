@@ -277,3 +277,87 @@ Las funciones internas (o "built-in functions") de Python son funciones que est�
     ```
 >[!NOTE]
 >Estas funciones son solo una parte de las muchas funciones internas que ofrece Python.
+
+## tipos de funciones
+### funciones anonimas (funciones lambda)
+Las funciones lambda en Python son funciones pequeñas y anónimas (sin nombre). Se usan generalmente para operaciones pequeñas y son muy útiles cuando se utilizan como argumentos para funciones de orden superior.
+```python
+# Ejemplo de función lambda que suma dos números
+sumar = lambda x, y: x + y
+
+# Uso de la función lambda
+resultado = sumar(3, 5)
+print(resultado)  # Salida: 8
+```
+### funciones closure
+Las closures en Python son funciones que recuerdan el entorno en el que fueron creadas. Esto significa que pueden recordar valores de variables que estaban en su ámbito cuando fueron creadas, incluso si esas variables ya no están en el alcance actual.
+```python
+def crear_multiplicador(n):
+    def multiplicar(x):
+        return x * n
+    return multiplicar
+
+# Crear una función closure que multiplica por 3
+multiplicar_por_3 = crear_multiplicador(3)
+
+# Uso de la función closure
+resultado = multiplicar_por_3(10)
+print(resultado)  # Salida: 30
+```
+### funciones callback
+Las funciones callback son funciones que se pasan como argumentos a otras funciones y se llaman (o "devuelven la llamada") dentro de la función externa para completar algún tipo de rutina o acción.
+```python
+def procesar_datos(datos, funcion_callback):
+    # Procesa los datos
+    resultado = [funcion_callback(dato) for dato in datos]
+    return resultado
+
+# Ejemplo de una función callback que duplica el valor
+def duplicar(x):
+    return x * 2
+
+datos = [1, 2, 3, 4, 5]
+resultado = procesar_datos(datos, duplicar)
+print(resultado)  # Salida: [2, 4, 6, 8, 10]
+```
+### porgramacion funcional
+La programación funcional es un paradigma de programación donde se usan funciones puras, inmutabilidad y evita cambios de estado y efectos secundarios. Se enfoca en el uso de funciones como valores de primera clase.
+
+>Características Principales:
+
+*Funciones Puras:* Funciones que no tienen efectos secundarios y siempre producen la misma salida para los mismos argumentos.
+
+*Inmutabilidad:* Los datos no pueden ser modificados una vez creados.
+Funciones de Orden Superior: Funciones que pueden tomar otras funciones como argumentos o devolverlas como resultados.
+
+*Recursión:* Uso de la recursión en lugar de la iteración tradicional (bucles).
+```python
+from functools import reduce
+
+# Uso de funciones puras
+def sumar(x, y):
+    return x + y
+
+# Lista de datos
+numeros = [1, 2, 3, 4, 5]
+
+# Uso de map para aplicar una función a todos los elementos de una lista
+dobles = list(map(lambda x: x * 2, numeros))
+print(dobles)  # Salida: [2, 4, 6, 8, 10]
+
+# Uso de filter para filtrar elementos en una lista
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)  # Salida: [2, 4]
+
+# Uso de reduce para reducir una lista a un único valor
+suma_total = reduce(sumar, numeros)
+print(suma_total)  # Salida: 15
+```
+### Resumen:
+`Funciones Lambda:` Pequeñas funciones anónimas usadas para operaciones cortas.
+
+`Funciones Closure:` Funciones que recuerdan el entorno en el que fueron creadas.
+
+`Funciones Callback:` Funciones que se pasan como argumentos y se llaman dentro de otras funciones.
+
+`Programación Funcional:` Paradigma que enfatiza el uso de funciones puras, inmutabilidad y evita efectos secundarios.
