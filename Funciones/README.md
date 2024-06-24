@@ -287,7 +287,14 @@ sumar = lambda x, y: x + y
 
 # Uso de la función lambda
 resultado = sumar(3, 5)
-print(resultado)  # Salida: 8
+print(resultado)  # Salida: 
+```
+EJEMPLO 2:
+```python
+lambda:"hola"
+# normal
+def saludo():
+    return"hola"
 ```
 ### funciones closure
 Las closures en Python son funciones que recuerdan el entorno en el que fueron creadas. Esto significa que pueden recordar valores de variables que estaban en su ámbito cuando fueron creadas, incluso si esas variables ya no están en el alcance actual.
@@ -361,3 +368,101 @@ print(suma_total)  # Salida: 15
 `Funciones Callback:` Funciones que se pasan como argumentos y se llaman dentro de otras funciones.
 
 `Programación Funcional:` Paradigma que enfatiza el uso de funciones puras, inmutabilidad y evita efectos secundarios.
+
+### PROGRAMACION FUNCIONAL
+la programacion funcional no requiere que sepas como se desarrolla y ejecuta el parametro dela informacion 
+```python
+lista=[5,7,8,4,1]
+def num_minimo(l):
+    minimo=l[0]
+    for n in l:
+        if n < minimo:
+            minimo=n
+    return minimo
+#programacion funcional
+min(lista)
+```
+#### averiguar sobre map(),filter(), reduce()
+### `map()`
+La función `map()` aplica una función a cada elemento de una lista (o de cualquier iterable) y devuelve una lista de los resultados.
+
+**Ejemplo 1:**
+Sumar 2 a cada elemento de una lista.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+result = list(map(lambda x: x + 2, numbers))
+print(result)  # Output: [3, 4, 5, 6, 7]
+```
+
+**Ejemplo 2:**
+Convertir una lista de cadenas de texto a mayúsculas.
+
+```python
+words = ['hello', 'world', 'python']
+result = list(map(lambda x: x.upper(), words))
+print(result)  # Output: ['HELLO', 'WORLD', 'PYTHON']
+```
+
+### `filter()`
+La función `filter()` crea una lista de elementos para los cuales la función retorna verdadero.
+
+**Ejemplo 1:**
+Filtrar números pares de una lista.
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = list(filter(lambda x: x % 2 == 0, numbers))
+print(result)  # Output: [2, 4, 6, 8, 10]
+```
+
+**Ejemplo 2:**
+Filtrar palabras que tienen más de 5 letras.
+
+```python
+words = ['hello', 'world', 'Pythonista', 'AI', 'openai']
+result = list(filter(lambda x: len(x) > 5, words))
+print(result)  # Output: ['Pythonista', 'openai']
+```
+
+### `reduce()`
+La función `reduce()` aplica una función de dos argumentos acumulativamente a los elementos de una lista, de tal manera que se reduce la lista a un solo valor.
+
+**Ejemplo 1:**
+Calcular el producto de todos los elementos de una lista.
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5]
+result = reduce(lambda x, y: x * y, numbers)
+print(result)  # Output: 120
+```
+
+**Ejemplo 2:**
+Encontrar el mayor número en una lista.
+
+```python
+from functools import reduce
+
+numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+result = reduce(lambda x, y: x if x > y else y, numbers)
+print(result)  # Output: 9
+```
+
+### Combinación de `map()`, `filter()` y `reduce()`
+A menudo se pueden combinar estas funciones para realizar operaciones complejas de manera concisa.
+
+**Ejemplo:**
+Dado una lista de números, sumar los cuadrados de los números pares.
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+squares_of_evens = map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, numbers))
+result = reduce(lambda x, y: x + y, squares_of_evens)
+print(result)  # Output: 220
+```
+
+Estos ejemplos muestran cómo `map()`, `filter()` y `reduce()` pueden ser utilizados para manipular y procesar datos de manera eficiente en Python.
