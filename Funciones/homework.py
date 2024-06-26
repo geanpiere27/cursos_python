@@ -41,3 +41,7 @@ valores=4,5,3,2,1
 print(min(*valores))
 print(max(*valores))
 print(sum(*valores))
+# TAREA 
+# crear una lista con los siguientes campos nombre, apellido, edad, celular, email
+# 1.- actualizar los registros con un campo mas todos tendran el campo de un programa  de estudios de enfermeria
+# 2.- buscar el segundo registro y actualizar su edad a 50 años.
