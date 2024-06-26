@@ -90,3 +90,58 @@ def pedir_nombre():
     nombre=input("ingresa tu nombre")
     return nombre
 mensaje(pedir_nombre())
+# MAP
+lista=[4,5,8,3,1]
+nueva_lista=list(map(lambda x:x+1,lista)) # por defecto retorn una lista
+print(nueva_lista)
+# ejemplo 2:
+# tengo una lista de alumnos que todos ellos han aprobado y psan al tercer semestre, 
+# problema en mi lista todos estan con el
+# crear un solucion que cambie el campo de semestre de 2 a 3
+lista_alumno=[
+    {
+        "nommbre":"abel",
+        "edad":30,
+        "semestre":2
+    },{
+        "nommbre":"anthony",
+        "edad":40,
+        "semestre":2
+    },{
+        "nommbre":"edith",
+        "edad":50,
+        "semestre":2
+    }
+] 
+def objeto(e):
+    if "semestre" in e:
+        e["semestre"]=e["semestre"]+1
+        e["programa"] = "arquitectura de plataformas"
+        return [
+            e
+        ]
+lista_actualizada=list(map(objeto,lista_alumno))
+print(lista_actualizada)
+# FILTER
+# devolver numros pares de una lista
+lista=[4,5,9,2,8,,6,3,12,18]
+nueva_lista=list(filter(lambda x:x%2==0,lista))
+print(nueva_lista)
+# ejemplo 3:
+lista_alumno=[
+    {
+        "nombre":"abel",
+        "edad":30,
+        "semestre":2
+    },{
+        "nombre":"anthony",
+        "edad":40,
+        "semestre":2
+    },{
+        "nombre":"edith",
+        "edad":50,
+        "semestre":2
+    }
+] 
+lista_filtrada = list(filter(lambda x: x['edad'] < 50, lista_alumno))
+print(lista_filtrada)
