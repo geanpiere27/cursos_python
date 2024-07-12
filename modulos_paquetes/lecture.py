@@ -1,8 +1,16 @@
-# averiguar modulos y paquetes en python
-#*modulo*
-#es un conjunto de funciones un archivo
-#.py con funciones 
-#*paquete*
-#es una carpeta con una serie de archivos
-# .py.una carpeta con modulos de python
-# dieferencia entre modulos y paquete
+# practicando pylint
+#nombre_alumno:str="miguel"
+#def suma(a:int,b:int)->int:
+#    """funcion para sumar dos numeros"""
+#    return a+b
+#print(suma(4,7))
+#
+#def resta(a,b):
+#    """funcion para restar dos numeros"""
+#    return a-b
+# importacion directa
+import operaciones 
+suma:int=operaciones.suma(7,8)
+msj:str=operaciones.mensaje
+print(suma)
+
